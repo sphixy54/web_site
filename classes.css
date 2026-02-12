@@ -1,0 +1,104 @@
+/* --- SECTION LAYOUTS --- */
+.zone {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#menu {
+    position: relative;      /* Keeps the H1 contained within the menu */
+    display: flex;
+    justify-content: center; /* Centers GIFs horizontally */
+    align-items: center;     /* Centers GIFs vertically */
+    min-height: 100vh;
+    background-image: url('assets/bg/stars.gif');
+    background-repeat: repeat;
+}
+
+/* --- THE TITLE (Floating Layer) --- */
+#menu h1 {
+    position: absolute; /* Takes H1 out of the flow so it doesn't push GIFs */
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    display: inline-block;
+    /* MOVE YOUR H1 HERE */
+    top: 150px; /* Adjust this to move it up or down */
+    transform: scale(20);
+    animation: wiggle 2s linear infinite;
+}
+
+/* --- THE GIF CONTAINER -- - */
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* No margins needed; it stays dead center because H1 is absolute */
+}
+
+/* --- SOLAR SYSTEM CONTAINER --- */
+#SolarSystem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;    /* Aligns planets by their bottom base */
+    gap: 60px;
+}
+
+/* --- PLANET GROUPS --- */
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.group:hover {
+    transform: scale(1.1);
+}
+
+.img-container {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    max-height: 100%;
+    width: auto;
+}
+
+/* Specific GIF Scaling */
+#venusGif {
+    transform: scale(0.75);
+}
+
+.group p {
+    color: yellow;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* --- PRESENTATION TABLE (Why this site section) --- */
+#presentationTable {
+    width: 75%;
+    height: 100vh;
+    border: 15px outset #c07850;
+    margin: 0 auto;
+    background: url(assets/bg/woodplank.gif);
+
+}
+
+#presentationTable td {
+    padding: 50px;
+    vertical-align: top;
+    border: 5px outset #c07850;
+    background: url(assets/bg/woodplank.gif);
+
+    color: white;
+}

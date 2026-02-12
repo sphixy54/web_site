@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>littleblog</title>
+    <link rel="stylesheet" href="boilerplate.css">
+    <link rel="stylesheet" href="classes.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+<section class="zone" id="menu" data-bg="assets/bg/stars.gif" data-height="100">
+    <h1 style="color: white">bienvenue sur mon cv !</h1>
+    <div id="main">
+        <div id="SolarSystem">
+            <div class="group" id="sun">
+                <a href="#présentation">
+                    <div class="img-container">
+                        <img src="assets/icons/sun.gif" alt="sunGif">
+                    </div>
+                    <p>qui suis je ?</p>
+                </a>
+            </div>
+            <div class="group" id="mercury">
+                <a href="#pourquoiCeSite">
+                    <div class="img-container">
+                        <img src="assets/icons/mercury.gif" alt="mercuryGif">
+                    </div>
+                    <p>mes passions</p>
+                </a>
+            </div>
+
+            <div class="group" id="earth">
+                <a href="#pourquoiCeSite">
+                    <div class="img-container">
+                        <img src="assets/icons/earth.gif" alt="earthGif">
+                    </div>
+                    <p>mes compétences</p>
+                </a>
+            </div>
+            <div class="group" id="venus">
+                <a href="#pourquoiCeSite">
+                    <div class="img-container">
+                        <img src="assets/icons/venus.gif" alt="venusGif" id="venusGif">
+                    </div>
+                    <p>mes projets:</p>
+                </a>
+            </div>
+
+
+            <div class="group" id="mars">
+                <a href="#pourquoiCeSite">
+                    <div class="img-container">
+                        <img src="assets/icons/mars.gif" alt="marsGif">
+                    </div>
+                    <p>mars</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <marquee behavior="scroll" direction="right" scrollamount="15"
+             style="position: absolute; bottom: 20px; left: 0; width: 100%;">
+        <img src="assets/icons/nyanCat.gif" alt="" style="width: 100px;">
+    </marquee>
+
+</section>
+<section class="zone" id="présentation" data-bg="assets/bg/brick.png" data-height="100">
+    <table id="presentationTable">
+        <tr>
+            <td style="width: 75%; height: 100vh; padding: 40px; color: white;">
+                <h1>why does this website exist?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laborum magni pariatur? A ad amet animi
+                    beatae earum itaque laudantium molestiae tenetur, voluptate. A expedita hic illum nostrum pariatur
+                    placeat!</p>
+            </td>
+            <td style="width: 25%; ; height: 100vh; padding: 40px; color: white;">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet atque aut beatae dolor
+                    dolorem excepturi hic illum ipsam, necessitatibus, perspiciatis quibusdam rem sint velit voluptatum.
+                    Dolore impedit provident ut?</h1>
+            </td>
+        </tr>
+    </table>
+</section>
+<section class="zone" id="pourquoiCeSite" data-bg="assets/bg/brick.png"></section>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script src="builder.js"></script>
+</body>
+</html>
