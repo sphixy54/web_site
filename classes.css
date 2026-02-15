@@ -19,14 +19,13 @@
 
 /* --- THE TITLE (Floating Layer) --- */
 #menu h1 {
-    position: absolute; /* Takes H1 out of the flow so it doesn't push GIFs */
+    position: absolute;
     width: 100%;
     text-align: center;
     color: white;
     z-index: 10;
     display: inline-block;
-    /* MOVE YOUR H1 HERE */
-    top: 150px; /* Adjust this to move it up or down */
+    top: 150px;
     transform: scale(20);
     animation: wiggle 2s linear infinite;
 }
@@ -84,7 +83,6 @@
     text-align: center;
 }
 
-/* --- PRESENTATION TABLE (Why this site section) --- */
 #presentationTable {
     width: 75%;
     height: 100vh;
@@ -95,10 +93,135 @@
 }
 
 #presentationTable td {
-    padding: 50px;
     vertical-align: top;
     border: 5px outset #c07850;
     background: url(assets/bg/woodplank.gif);
+    width: 25%;
+    height: 100vh;
+    padding: 40px;
+    color: #ffffff;
+}
 
-    color: white;
+:root {
+    /* Red: 255, 0, 0 */
+    --hacker-rgb: 255, 0, 0;
+    --hacker-color: rgb(var(--hacker-rgb));
+}
+
+#projectTable {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: 'VT323', monospace;
+    background: rgba(10, 0, 0, 0);
+    border: 1px solid var(--hacker-color);
+    /* We use the variable inside rgba by using the hex or rgb equivalent if needed,
+       but for basic borders/text, var() is perfect. */
+    box-shadow: 0 0 20px rgb(var(--hacker-rgb), 0.5), inset 0 0 10px rgba(var(--hacker-rgb), 0.4);
+    backdrop-filter: blur(4px);
+    color: var(--hacker-color);
+}
+
+#projectTable th {
+    /* This creates Red at 10% opacity */
+    background: rgba(var(--hacker-rgb), 0.1);
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid var(--hacker-color);
+    text-align: left;
+}
+
+#projectTable td {
+    padding: 20px;
+    border: 1px solid rgba(var(--hacker-rgb), 0.5);
+    line-height: 1.4;
+}
+#projectTable td:first-child {
+    text-align: center;
+}
+#projectTable h2::before,
+#projectTable td:nth-child(2) p::before {
+    content: "> ";
+}
+
+#projectTable {
+    position: relative;
+}
+#projectTable td:nth-child(2) {
+    vertical-align: middle;
+}
+
+#projectTable td p{
+    font-size: 24px
+}
+
+#projectTable::before {
+    content: "";
+    position: absolute;
+    top: -5px; left: -5px;
+    width: 20px; height: 20px;
+    border-top: 3px solid var(--hacker-color);
+    border-left: 3px solid var(--hacker-color);
+}
+
+#mesprojets {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black; /* The fallback */
+    overflow: hidden;
+    display: block;
+}
+#mesprojets {
+    position: relative;
+    display: block; /* Ensure it's not hidden or collapsed */
+}
+
+#matrixBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Sits behind your content */
+    pointer-events: none;
+
+}
+
+.matrixContent {
+    position: relative;
+    z-index: 2; /* Sits on top of the rain */
+    color: var(--hacker-color);
+}
+#projectTable a {
+    color: chartreuse;
+}
+
+
+#projectTable a:hover {
+    text-shadow: 0 0 5px chartreuse, 0 0 5px chartreuse;
+    font-size: 110%;
+    transition: 0.3s;}
+
+
+
+/* --- AUTO-GENERATED WORLD CSS --- */
+
+/* ZONE: MENU */
+#menu { position: relative; width: 100%; min-height: 100vh; background-image: url('assets/bg/stars.gif'); background-repeat: repeat; overflow: visible; }
+
+/* ZONE: PRÉSENTATION */
+#presentation { position: relative; width: 100%; min-height: 100vh; background-image: url('assets/bg/brick.png'); background-repeat: repeat; overflow: visible; }
+
+/* ZONE: MESPASSION */
+#mespassion { display: block; position: relative; width: 100%; min-height: 100vh; background-image: url('assets/bg/leaves.gif'); background-repeat: repeat; overflow: visible; }
+
+#mespassion h1{
+    text-align: center;
+    animation: wiggle 2s linear infinite;
+    font-size: 25px;
+    padding: 15px;
 }

@@ -12,6 +12,8 @@ html, body {
     font-family: "Comic Sans MS", cursive;
     color: white; /* Default text color */
     scroll-behavior: smooth;
+
+
 }
 
 /* Base styles for common elements */

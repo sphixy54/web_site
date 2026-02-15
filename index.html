@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex, nofollow">
     <title>littleblog</title>
     <link rel="stylesheet" href="boilerplate.css">
     <link rel="stylesheet" href="classes.css">
     <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,34 +18,34 @@
     <div id="main">
         <div id="SolarSystem">
             <div class="group" id="sun">
-                <a href="#présentation">
+                <a href="#presentation">
                     <div class="img-container">
                         <img src="assets/icons/sun.gif" alt="sunGif">
                     </div>
-                    <p>qui suis je ?</p>
+                    <p>qui-suis-je ?</p>
                 </a>
             </div>
             <div class="group" id="mercury">
-                <a href="#pourquoiCeSite">
+                <a href="#mespassion">
                     <div class="img-container">
                         <img src="assets/icons/mercury.gif" alt="mercuryGif">
                     </div>
-                    <p>mes passions</p>
+                    <p>Mes passions</p>
                 </a>
             </div>
 
             <div class="group" id="earth">
-                <a href="#pourquoiCeSite">
+                <a href="#">
                     <div class="img-container">
                         <img src="assets/icons/earth.gif" alt="earthGif">
                     </div>
-                    <p>mes compétences</p>
+                    <p>Mes compétences</p>
                 </a>
             </div>
             <div class="group" id="venus">
-                <a href="#pourquoiCeSite">
+                <a href="#mesprojets">
                     <div class="img-container">
-                        <img src="assets/icons/venus.gif" alt="venusGif" id="venusGif">
+                        <img src="assets/icons/venus.gif" alt="venusGif">
                     </div>
                     <p>mes projets:</p>
                 </a>
@@ -50,7 +53,7 @@
 
 
             <div class="group" id="mars">
-                <a href="#pourquoiCeSite">
+                <a href="#">
                     <div class="img-container">
                         <img src="assets/icons/mars.gif" alt="marsGif">
                     </div>
@@ -65,25 +68,131 @@
     </marquee>
 
 </section>
-<section class="zone" id="présentation" data-bg="assets/bg/brick.png" data-height="100">
+<section class="zone" id="presentation" data-bg="assets/bg/brick.png" data-height="100">
     <table id="presentationTable">
         <tr>
-            <td style="width: 75%; height: 100vh; padding: 40px; color: white;">
-                <h1>why does this website exist?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laborum magni pariatur? A ad amet animi
-                    beatae earum itaque laudantium molestiae tenetur, voluptate. A expedita hic illum nostrum pariatur
-                    placeat!</p>
-            </td>
-            <td style="width: 25%; ; height: 100vh; padding: 40px; color: white;">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet atque aut beatae dolor
-                    dolorem excepturi hic illum ipsam, necessitatibus, perspiciatis quibusdam rem sint velit voluptatum.
-                    Dolore impedit provident ut?</h1>
+            <td>
+                <h1></h1>
             </td>
         </tr>
     </table>
 </section>
-<section class="zone" id="pourquoiCeSite" data-bg="assets/bg/brick.png"></section>
+<section class="zone" id="mespassion" data-bg="assets/bg/corkboard.gif" data-height="100">
+    <h1>Mes passions</h1>
+    <img src="assets/icons/PolaroidPhotographie.png" alt="Polaroid"  class="draggable">
+
+</section>
+<section class="zone" id="mesprojets">
+    <canvas id="matrixBG">
+    </canvas>
+    <div class="matrixContent">
+        <table id="projectTable">
+            <thead>
+            <tr>
+                <th>[ PROJET ]</th>
+                <th>[ DÉTAILS ]</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;"> math en jean</h2>
+                    <p>lien:<a href="https://github.com/Louloubiwan/Projet_points_MEJ-2026">github</a></p>
+                    <p>lien: <a href="https://www.mathenjeans.fr/">site</a></p>
+                </td>
+                <td>
+                    <p>Projet de recherche mathématique</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;"> Olympiade de l'ingénieur</h2>
+                    <p>lien: <a href="https://www.upsti.fr/nos-evenements/olympiades-de-si">site</a></p>
+                    <p>Theme : l'ingénierie au service de la ville de demain </p>
+                </td>
+                <td>
+                    <p> Travail de groupe sur la création d'un garage à trottinette security</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;"> concours kangourou</h2>
+                    <p>lien: <a href="https://www.mathkang.org/concours/">site</a></p>
+                </td>
+                <td>
+                    <p> Participation au concours kangourou, concours basé sur des exercices de logique et de
+                        raisonnement</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;">Concours général de math </h2>
+                    <p>lien: <a
+                            href="https://eduscol.education.fr/1438/concours-general-des-lycees-et-des-metiers">site</a>
+                    </p>
+                </td>
+                <td>
+                    <p> Participation au concours général de math</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;">stage ada</h2>
+                    <p>2025</p>
+                </td>
+                <td>
+                    <p>participation stage ada</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;">mun condorcet académie</h2>
+                    <p>Lien :<a
+                            href="https://condorcet.ent.auvergnerhonealpes.fr/bac-notre-offre-de-formation/projets/muna/">site</a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Simulation des Nations Unies dans laquelle nous jouons le role de diplomate
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;">munalfrink</h2>
+                    <p>lien: <a href="https://munalfrink.nl/">site</a></p>
+                </td>
+                <td>
+                    <p>dans la continuité du mun Condorcet académie moi et d'autres élève avons participer a une
+                        <b>M</b>ini <b>U</b>nited <b>N</b>ations à Alfrink au pays bas</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;">stage d'observation chez Cadence Design systems</h2>
+                    <p>lien: <a href="https://www.cadence.com/en_US/home.html">site</a></p>
+                </td>
+                <td>
+                    <p>J'ai fait mon stage d'observation chez Cadence Design systems, une entreprise qui développe des
+                        logiciels de création de micro-processeurs et de pcb. </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <h2 style="margin-top: 0;">Échange en Allemagne</h2>
+                </td>
+                <td>
+                    <p>J'ai participé à un échange avec des élèves de la ville de Mulheim am main, la ville jumelée à
+                        saint-priest </p>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <script src="builder.js"></script>
+<script src="matrix.js"></script>
 </body>
 </html>
