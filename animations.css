@@ -5,3 +5,27 @@
     75% { transform: scale(2) rotate(3deg); }
     100% { transform: scale(2) rotate(0deg); }
 }
+
+.jiggle span {
+    display: inline-block;
+    animation: jiggle 0.6s ease-in-out infinite;
+}
+
+/* Stagger each letter */
+.jiggle span:nth-child(1) { animation-delay: 0s; }
+.jiggle span:nth-child(2) { animation-delay: 0.1s; }
+.jiggle span:nth-child(3) { animation-delay: 0.2s; }
+.jiggle span:nth-child(4) { animation-delay: 0.3s; }
+.jiggle span:nth-child(5) { animation-delay: 0.4s; }
+
+.jiggle span {
+    display: inline-block;
+    animation: jiggle 0.6s ease-in-out infinite;
+    /* delay based on index */
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes jiggle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}

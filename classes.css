@@ -88,13 +88,15 @@
 
 #presentationTable {
     width: 75%;
-    height: 100vh;
+    height: 10vh;
     border: 15px outset #c07850;
     margin: 0 auto;
     background: url(assets/bg/woodplank.gif);
     border-collapse: collapse;
 }
-
+#presentationTable p {
+    margin-bottom: 1.5em;
+}
 #presentationTable td {
     vertical-align: top;
     border: 5px outset #c07850;
@@ -104,21 +106,10 @@
 }
 
 /* --- ZONE: MES PASSIONS (FIXED) --- */
-#mespassion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('assets/bg/leaves.gif');
-    background-repeat: repeat;
-    overflow: hidden;
-}
 
 #mespassion h1 {
     text-align: center;
-    animation: wiggle 2s linear infinite;
+    animation: jiggle 2s linear infinite;
     font-size: 40px;
     padding: 20px;
     color: white;
@@ -127,6 +118,22 @@
 
 }
 
+#mespassionTable {
+    width: 75%;                    /* was 100vh – now matches presentation table */
+    background-color: #1a1f1a;
+    background-image: url('assets/bg/chalkboard.png');
+    background-repeat: repeat;
+    border: 4px ridge #808080;
+    color: #ffffff;
+    font-family: 'Comic Sans MS', 'Chalkboard', cursive;
+    filter: drop-shadow(2px 2px 0px #000000);
+}
+
+#mespassionTable td, #mespassionTable th {
+    border: 1px outset #4a4a4a;
+    padding: 4px 8px;
+    background-color: rgba(0,0,0,0.3);
+}
 .draggable {
     width: 300px;
     cursor: move;
@@ -219,4 +226,26 @@
     text-shadow: 0 0 5px chartreuse, 0 0 5px chartreuse;
     font-size: 110%;
     transition: 0.3s;
+}/* --- AUTO-GENERATED WORLD CSS --- */
+
+/* ZONE: MENU */
+#menu { position: relative; width: 100%; min-height: 100vh; background-image: url('assets/bg/stars.gif'); background-repeat: repeat; overflow: visible; }
+
+/* ZONE: PRESENTATION */
+#presentation { position: relative; width: 100%; min-height: 100vh; background-image: url('assets/bg/brick.png'); background-repeat: repeat; overflow: visible; }
+
+/* ZONE: MESPASSION */
+#mespassion {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('assets/bg/corkboard.gif');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
+
+/* ZONE: MESPROJETS */
+#mesprojets { position: relative; width: 100%; min-height:100vh ;  overflow: visible; }
