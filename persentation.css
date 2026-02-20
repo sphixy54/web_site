@@ -1,0 +1,30 @@
+
+#presentation {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('assets/bg/brick.png');
+    background-repeat: repeat;
+    overflow: visible;
+}
+
+#presentationTable {
+    width: 75%;
+    height: 10vh;
+    border: 15px outset #c07850;
+    margin: 0 auto;
+    background: url(assets/bg/woodplank.gif);
+    border-collapse: collapse;
+}
+
+#presentationTable p {
+    margin-bottom: 1.5em;
+}
+
+#presentationTable td {
+    vertical-align: top;
+    border: 5px outset #c07850;
+    background: url(assets/bg/woodplank.gif);
+    padding: 40px;
+    color: #ffffff;
+}

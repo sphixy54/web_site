@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <title>littleblog</title>
     <link rel="stylesheet" href="boilerplate.css">
-    <link rel="stylesheet" href="classes.css">
-    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="persentation.css">
+    <link rel="stylesheet" href="mespassions.css">
+    <link rel="stylesheet" href="mesprojets.css">    <link rel="stylesheet" href="animations.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +25,7 @@
             <div class="group" id="sun">
                 <a href="#presentation">
                     <div class="img-container">
-                        <img src="assets/icons/sun.gif" alt="sunGif">
+                        <img src="assets/icons/mainMenu/sun.gif" alt="sunGif">
                     </div>
                     <p>qui-suis-je ?</p>
                 </a>
@@ -31,43 +33,28 @@
             <div class="group" id="mercury">
                 <a href="#mespassion">
                     <div class="img-container">
-                        <img src="assets/icons/mercury.gif" alt="mercuryGif">
+                        <img src="assets/icons/mainMenu/mercury.gif" alt="mercuryGif">
                     </div>
                     <p>Mes passions</p>
                 </a>
             </div>
 
             <div class="group" id="earth">
-                <a href="#">
-                    <div class="img-container">
-                        <img src="assets/icons/earth.gif" alt="earthGif">
-                    </div>
-                    <p>Mes compétences</p>
-                </a>
-            </div>
-            <div class="group" id="venus">
                 <a href="#mesprojets">
                     <div class="img-container">
-                        <img src="assets/icons/venus.gif" alt="venusGif">
+                        <img src="assets/icons/mainMenu/earth.gif" alt="earthGif">
                     </div>
-                    <p>mes projets:</p>
+                    <p>Mes compétences et mes projets</p>
                 </a>
             </div>
 
 
-            <div class="group" id="mars">
-                <a href="#">
-                    <div class="img-container">
-                        <img src="assets/icons/mars.gif" alt="marsGif">
-                    </div>
-                    <p>mars</p>
-                </a>
-            </div>
+
         </div>
     </div>
     <marquee behavior="scroll" direction="right" scrollamount="15"
              style="position: absolute; bottom: 20px; left: 0; width: 100%;">
-        <img src="assets/icons/nyanCat.gif" alt="" style="width: 100px;">
+        <img src="assets/icons/mainMenu/nyanCat.gif" alt="" style="width: 100px;">
     </marquee>
 
 </section>
@@ -78,14 +65,14 @@
         <tr style="height: 100px;">
             <td>
                 <h1>Oumar Ben Salem</h1>
-                <h2>Élève de terminale générale...</h2>
+                <h2>Élève de terminale générale spécialités math et sciences de l'ingénieur</h2>
             </td>
         </tr>
 
         <!-- Row 2 -->
         <tr>
             <td style="font-size: 25.5px; vertical-align: top; padding-bottom: 10em">
-                <p>Ayant grandi avec internet et les jeux vidéo, j'ai développé un attrait pour le monde de l'informatique et j'ai
+                <p>Ayant grandi avec internet et les jeux vidéos, j'ai développé un attrait pour le monde de l'informatique et j'ai
                     appris à programmer vers l'âge de 9 ans grâce à mon envie de devenir développeur de jeux vidéo. Cet
                     intérêt s'est également propagé à divers domaines, tels que la cryptographie et la cybersécurité,
                     notamment le pentesting et le reverse engineering. Je suis poussé par une curiosité insatiable pour le
@@ -111,129 +98,128 @@
     </table>
 </section>
 <section class="zone" id="mespassion" data-bg="assets/bg/corkboard.gif" data-height="100">
-    <table id="mespassionTable">
+    <table id="mespassionTable" style="table-layout: auto; white-space: nowrap; width: 75vw; border-collapse: collapse;">
         <tr>
-            <td>
-                <h1 class="jiggle"><span style="--i:0">m</span><span style="--i:1">e</span><span style="--i:2">s</span><span style="--i:3">&nbsp;</span><span style="--i:4">p</span><span style="--i:5">a</span><span style="--i:6">s</span><span style="--i:7">s</span><span style="--i:8">i</span><span style="--i:9">o</span><span style="--i:10">n</span><span style="--i:11">s</span></h1>
+            <td colspan="2" style="text-align: center;">
+                <h1 class="jiggle" style="margin-bottom: 20px;">
+                    <span style="--i:0">m</span><span style="--i:1">e</span><span style="--i:2">s</span><span style="--i:3">&nbsp;</span><span style="--i:4">p</span><span style="--i:5">a</span><span style="--i:6">s</span><span style="--i:7">s</span><span style="--i:8">i</span><span style="--i:9">o</span><span style="--i:10">n</span><span style="--i:11">s</span>
+                </h1>
             </td>
         </tr>
         <tr>
-            <td>
+            <td style="text-align: center; vertical-align: middle; width: 100px;">
+                <img src="assets/icons/passions/noun-badminton-racket-173041.svg" style="width: 80px; height: auto; display: block; margin: 0 auto;">
             </td>
+            <td style="vertical-align: middle; padding-left: 15px;"><p style="margin: 0;">badminton</p></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <img src="assets/icons/passions/kalilinux.svg" style="width: 80px; height: auto; display: block; margin: 0 auto;">
+            </td>
+            <td style="vertical-align: middle; padding-left: 15px;"><p style="margin: 0;">cybersécurité</p></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <img src="assets/icons/passions/noun-book.svg" style="width: 80px; height: auto; display: block; margin: 0 auto;">
+            </td>
+            <td style="vertical-align: middle; padding-left: 15px;"><p style="margin: 0;">lecture</p></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <img src="assets/icons/passions/noun-camera.svg" style="width: 80px; height: auto; display: block; margin: 0 auto;">
+            </td>
+            <td style="vertical-align: middle; padding-left: 15px;"><p style="margin: 0;">photographie</p></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <img src="assets/icons/passions/noun-volleyball.svg" style="width: 80px; height: auto; display: block; margin: 0 auto;">
+            </td>
+            <td style="vertical-align: middle; padding-left: 15px;"><p style="margin: 0;">volleyball</p></td>
         </tr>
     </table>
+    <marquee direction="right" scrollamount="20">
+        <img src="assets/icons/divers/mario.gif" alt="mario qui court" style="width: 75px;">
+    </marquee>
 </section>
 <section class="zone" id="mesprojets">
     <canvas id="matrixBG">
     </canvas>
     <div class="matrixContent">
-        <table id="projectTable">
+        <table id="projectTable" class="matrix-table">
             <thead>
             <tr>
-                <th>[ PROJET ]</th>
+                <th style="width: 40%;">[ PROJET ]</th>
                 <th>[ DÉTAILS ]</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;"> math en jean</h2>
-                    <p>lien:<a href="https://github.com/Louloubiwan/Projet_points_MEJ-2026">github</a></p>
-                    <p>lien: <a href="https://www.mathenjeans.fr/">site</a></p>
+                <td><h2 style="margin: 0;">math en jean</h2>
+                    <p style="margin: 0;">lien: <a href="https://github.com/Louloubiwan/Projet_points_MEJ-2026">github</a> / <a href="https://www.mathenjeans.fr/">site</a></p>
                 </td>
-                <td>
-                    <p>Projet de recherche mathématique</p>
-                </td>
+                <td><p style="margin: 0;">Projet de recherche mathématique</p></td>
             </tr>
             <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;"> Olympiade de l'ingénieur</h2>
-                    <p>lien: <a href="https://www.upsti.fr/nos-evenements/olympiades-de-si">site</a></p>
-                    <p>Theme : l'ingénierie au service de la ville de demain </p>
+                <td><h2 style="margin: 0;">Olympiade de l'ingénieur</h2>
+                    <p style="margin: 0;">lien: <a href="https://www.upsti.fr/nos-evenements/olympiades-de-si">site</a></p>
                 </td>
-                <td>
-                    <p> Travail de groupe sur la création d'un garage à trottinette security</p>
-                </td>
+                <td><p style="margin: 0;">Création d'un garage à trottinette sécurisé (Ville de demain)</p></td>
             </tr>
             <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;"> concours kangourou</h2>
-                    <p>lien: <a href="https://www.mathkang.org/concours/">site</a></p>
-                </td>
-                <td>
-                    <p> Participation au concours kangourou, concours basé sur des exercices de logique et de
-                        raisonnement</p>
-                </td>
+                <td><h2 style="margin: 0;">concours kangourou</h2></td>
+                <td><p style="margin: 0;">Exercices de logique et de raisonnement</p></td>
             </tr>
             <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;">Concours général de math </h2>
-                    <p>lien: <a
-                            href="https://eduscol.education.fr/1438/concours-general-des-lycees-et-des-metiers">site</a>
-                    </p>
-                </td>
-                <td>
-                    <p> Participation au concours général de math</p>
-                </td>
+                <td><h2 style="margin: 0;">Concours général</h2></td>
+                <td><p style="margin: 0;">Participation au concours général de mathématiques</p></td>
             </tr>
             <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;">stage ada</h2>
-                    <p>2025</p>
-                </td>
-                <td>
-                    <p>participation stage ada</p>
-                </td>
+                <td><h2 style="margin: 0;">stage ada / cadence</h2></td>
+                <td><p style="margin: 0;">Observation chez Cadence Design Systems (PCB/Micro-processeurs)</p></td>
             </tr>
             <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;">mun condorcet académie</h2>
-                    <p>Lien :<a
-                            href="https://condorcet.ent.auvergnerhonealpes.fr/bac-notre-offre-de-formation/projets/muna/">site</a>
-                    </p>
+                <td><h2 style="margin: 0;">MUN / Échanges</h2>
+                    <p style="margin: 0;"><a href="https://munalfrink.nl/">Munalfrink</a> / <a href="https://condorcet.ent.auvergnerhonealpes.fr/bac-notre-offre-de-formation/projets/muna/">Condorcet</a></p>
                 </td>
-                <td>
-                    <p>
-                        Simulation des Nations Unies dans laquelle nous jouons le role de diplomate
-                    </p>
-                </td>
+                <td><p style="margin: 0;">Diplomatie (Pays-Bas) et échange à Mulheim am Main (Allemagne)</p></td>
             </tr>
-            <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;">munalfrink</h2>
-                    <p>lien: <a href="https://munalfrink.nl/">site</a></p>
-                </td>
-                <td>
-                    <p>dans la continuité du mun Condorcet académie moi et d'autres élève avons participer a une
-                        <b>M</b>ini <b>U</b>nited <b>N</b>ations à Alfrink au pays bas</p>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;">stage d'observation chez Cadence Design systems</h2>
-                    <p>lien: <a href="https://www.cadence.com/en_US/home.html">site</a></p>
-                </td>
-                <td>
-                    <p>J'ai fait mon stage d'observation chez Cadence Design systems, une entreprise qui développe des
-                        logiciels de création de micro-processeurs et de pcb. </p>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 40%;">
-                    <h2 style="margin-top: 0;">Échange en Allemagne</h2>
-                </td>
-                <td>
-                    <p>J'ai participé à un échange avec des élèves de la ville de Mulheim am main, la ville jumelée à
-                        saint-priest </p>
-                </td>
-            </tr>
+            </tbody>
 
+            <thead>
+            <tr>
+                <th style="width: 40%; padding-top: 40px;"></th>
+                <th style="padding-top: 40px;">[ COMPÉTENCES ]</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><h2 style="margin: 0;">Informatique</h2></td>
+                <td>
+                    <p style="margin: 0;">
+                        <strong>Programmation:</strong> <br> Python (Intermédiaire), <br> Godot Engine (Intermédiaire), <br> HTML5/CSS3/JS (Débutant)<br>
+                        <strong>Pix:</strong> Niveau Avancé
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><h2 style="margin: 0;">Langues</h2></td>
+                <td>
+                    <p style="margin: 0;">
+                        <strong>Anglais:</strong> B2+/C1 (Diplomatie MUN)<br>
+                        <strong>Allemand:</strong> A1/A2 (Échange Mulheim)
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><h2 style="margin: 0;">Modélisation 3D</h2></td>
+                <td><p style="margin: 0;">Blender (Niveau débutant)</p></td>
+            </tr>
             </tbody>
         </table>
+        <p style="color: white"><a href="credits.html">Crédits et attributions</a></p>
     </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-<script src="builder.js"></script>
 <script src="matrix.js"></script>
 </body>
 </html>

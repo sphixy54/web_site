@@ -1,10 +1,8 @@
-/* --- GLOBAL RESETS --- */
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    /* Structure */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -12,14 +10,12 @@ html, body {
     background-color: black;
     color: white;
     scroll-behavior: smooth;
-    overflow-x: hidden; /* Évite le scroll horizontal parasite */
+    overflow-x: hidden;
 
-    /* Rendu "Pixel-Perfect" (Désactive le lissage) */
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeSpeed;
 
-    /* Rendu des images (GIFs et icônes) sans flou */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: pixelated;
     font-family: 'Arimo', sans-serif;
@@ -30,12 +26,10 @@ html, body {
     text-rendering: optimizeSpeed;
 }
 
-/* Optionnel : Empêche les images d'avoir un lissage si elles sont étirées */
 img {
     image-rendering: pixelated;
 }
 
-/* Base styles for common elements */
 h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -50,4 +44,26 @@ a {
 img {
     max-height: 100%;
     width: auto;
+}
+
+:root {
+    --hacker-rgb: 255, 0, 0;
+    --hacker-color: rgb(var(--hacker-rgb));
+}
+
+.zone {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.draggable {
+    width: 300px;
+    cursor: move;
+    touch-action: none;
+    user-select: none;
+    position: absolute;
+    z-index: 10;
 }
